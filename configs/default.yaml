@@ -34,3 +34,7 @@ scenarios:
   - name: all_healthy
     description: "Baseline — both providers healthy"
     provider_overrides: {}
+  - name: primary_slow_80
+    description: "80% fail rate, verify recovery time measured"
+    provider_overrides:
+      primary: 0.8
